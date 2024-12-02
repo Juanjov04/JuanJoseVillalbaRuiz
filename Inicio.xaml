@@ -5,7 +5,7 @@
              Title="Inicio">
     <VerticalStackLayout>
         <Label 
-            Text="Hola bienvenido a mi pagina de notas, disfuta de la experiencia"
+            Text="Hola bienvenido a mi pagina Juan Jose Villalba notas, disfuta de la experiencia"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
