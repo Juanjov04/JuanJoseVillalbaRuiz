@@ -12,17 +12,17 @@
         <ShellContent
     Title="Inicio"
     ContentTemplate="{DataTemplate local:Inicio}"
-   Icon="meme-e1653582504105.jpg" 
+   Icon="memee1653582504105.jpg" 
  />
         <ShellContent
 Title="Notas"
 ContentTemplate="{DataTemplate local:Notas}"
-            Icon="meme-e1653582504105.jpg" 
+            Icon="memee1653582504105.jpg" 
  />
         <ShellContent
 Title="About Page"
 ContentTemplate="{DataTemplate local:AboutPage}"
-            Icon="meme-e1653582504105.jpg" 
+            Icon="memee1653582504105.jpg" 
  />
     </TabBar>
     

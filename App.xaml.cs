@@ -12,7 +12,7 @@ namespace JuanJoseVillalbaRuiz
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "notes.db3");
             Database = new NotesDatabase(dbPath);
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new AppShell());
         }
     }
 }

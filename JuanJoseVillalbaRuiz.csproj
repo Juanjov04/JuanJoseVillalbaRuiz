@@ -57,7 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\meme-e1653582504105.jpg" />
+	  <None Remove="Resources\Images\memee1653582504105.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
