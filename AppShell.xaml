@@ -7,9 +7,23 @@
     Shell.FlyoutBehavior="Disabled"
     Title="JuanJoseVillalbaRuiz">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
+    <TabBar>
+        <ShellContent
+    Title="Inicio"
+    ContentTemplate="{DataTemplate local:Inicio}"
+   Icon="meme-e1653582504105.jpg" 
+ />
+        <ShellContent
+Title="Notas"
+ContentTemplate="{DataTemplate local:Notas}"
+            Icon="meme-e1653582504105.jpg" 
+ />
+        <ShellContent
+Title="About Page"
+ContentTemplate="{DataTemplate local:AboutPage}"
+            Icon="meme-e1653582504105.jpg" 
+ />
+    </TabBar>
+    
 </Shell>
