@@ -1,3 +1,6 @@
+using SQLite;
+
+
 namespace JuanJoseVillalbaRuiz;
 
 public partial class Notas : ContentPage
@@ -6,4 +9,13 @@ public partial class Notas : ContentPage
 	{
 		InitializeComponent();
 	}
+    public class Note
+    {
+        [PrimaryKey,AutoIncrement]
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
+
 }
