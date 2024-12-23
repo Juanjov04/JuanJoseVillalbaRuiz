@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JuanJoseVillalbaRuiz.ViewModel"
              x:Class="JuanJoseVillalbaRuiz.Notas"
              Title="Notas">
+    <ContentPage.BindingContext>
+        <local:NotasViewModel />
+    </ContentPage.BindingContext>
     <VerticalStackLayout Padding="10" Spacing="10">
-        <Entry x:Name="TitleEntry" Placeholder="Título de la nota" />
-        <Editor x:Name="ContentEditor" Placeholder="Escribe tu nota aquí..." HeightRequest="100" />
-        <Button Text="Guardar Nota" Clicked="OnSaveNoteClicked" />
+        <Entry Text="{Binding Title}" Placeholder="Título de la nota" />
+        <Editor Text="{Binding Content}" Placeholder="Escribe tu nota aquí..." HeightRequest="100" />
+        <Button Text="Guardar Nota" Command="{Binding SaveNoteCommand}" />
         <Label Text="Lista de Notas" FontSize="Medium" />
-        <CollectionView x:Name="NotesCollectionView">
+        <CollectionView ItemsSource="{Binding Notes}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame BorderColor="Gray" Padding="10" Margin="5">

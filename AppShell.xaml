@@ -25,5 +25,6 @@ ContentTemplate="{DataTemplate local:AboutPage}"
             Icon="memee1653582504105.jpg" 
  />
     </TabBar>
-    
+
+
 </Shell>

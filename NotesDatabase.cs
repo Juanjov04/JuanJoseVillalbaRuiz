@@ -1,10 +1,7 @@
 ﻿using System;
-using SQLite;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using static JuanJoseVillalbaRuiz.Notas;
+using SQLite;
 
 namespace JuanJoseVillalbaRuiz
 {
@@ -40,5 +37,14 @@ namespace JuanJoseVillalbaRuiz
         {
             return _database.DeleteAsync(note);
         }
+    }
+
+    public class Note
+    {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }
